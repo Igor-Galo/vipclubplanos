@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 100%;
+    height: 20vh;
+    transform: rotate(180deg);
+    margin-bottom: -15vh;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: black;
+    background-image: url('img/Pngtreecreative_and_modern_abstract_gradient_5599118_1_1.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 166vh;
+    color: rgb(135, 2, 197);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+    margin-bottom: -8vh;
+}
+
+.vivologo {
+    height: 8vh;
+    margin-bottom: -5vh;
+}
+.marcaPromo{
+    width: 16vh;
+    height: 18vh;
+    margin-left: 8vh;
+    margin-bottom: -9vh;
+}
+.marcaPromo img{
+    border-radius: 50%;
+    height: 15vh;
+}
+
+h1, h4 {
+    margin-top: -3vh;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+.cards {
+    top: 36vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 90%;
+    max-width: 144vh;
+    margin: 3vh auto;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
+    max-width: 43.2vh;
+}
+
+.plan {
+    padding: 10px;
+    background-color: rgb(92, 11, 112);
+    color: #917072;
+}
+
+strong {
+    font-weight: 600;
+    color: #754D42;
+}
+
+.plan .inner {
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan .inner .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(135, 2, 197);
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: .625em .75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ff9b18;
+}
+
+small {
+    color: #ff9b18;
+    font-size: .75em;
+    margin-left: .25em;
+}
+
+.plan .inner .title {
+    font-weight: 600;
+    font-size: 1.45rem;
+    color: #754D42;
+
+    &+* {
+        margin-top: .75rem;
+    }
+}
+
+.plan .inner .info {
+    &+* {
+        margin-top: 1rem;
+    }
+}
+
+.plan .inner .features {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .inner .features li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    &+* {
+        margin-top: .75rem;
+    }
+
+    .plan .inner .features li .icon {
+        background-color: #1FCAC5;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    .plan .inner .features li .icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    &+* {
+        margin-top: 1.25rem;
+    }
+}
+
+button {
+    font: inherit;
+    background-color: rgb(135, 2, 197);
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    width: 100%;
+    border: 0;
+    padding: 1em;
+    &:hover,
+    &:focus {
+        background-color: #522161;
+    }
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+footer img {
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    margin-top: -30vh;
+    margin-bottom: -2.5vh;
+}
+
+@media screen and (max-width: 900px)
+{
+    .marcaPromo{
+        width: 12vh;
+        height: 14vh;
+        margin-left: 0.3vh;
+        margin-bottom: -2vh;
+    }
+    .marcaPromo img{
+        border-radius: 50%;
+        height: 10vh;
+    }
+    h1, h4 {
+        margin-top: 2vh;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .marcaPromo{
+        width: 12vh;
+        height: 14vh;
+        margin-left: -1.3vh;
+        margin-bottom: -6vh;
+        margin-top: -10vh;
+    }
+    .marcaPromo img{
+        border-radius: 50%;
+        height: 8vh;
+    }
+
+    h1, h4 {
+        text-align: center;
+        margin-top: 5vh;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .cards{
+        gap: 5.2rem;
+    }
+
+}
